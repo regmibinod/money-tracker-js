@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>money-tracker-js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Money Tracker</h2>
+        <h3>Balance: $<span id="balance">0.00</span></h3>
+        
+        <div class="summary">
+            <div>
+                <h4>Income</h4>
+                <p id="income" class="money positive">$0.00</p>
+            </div>
+            <div>
+                <h4>Expense</h4>
+                <p id="expense" class="money negative">$0.00</p>
+            </div>
+        </div>
+
+        <h3>Transactions</h3>
+        <ul id="transaction-list"></ul>
+
+        <h3>Add Transaction </h3>
+        <form id="transaction-form">
+            <input type="text" id="text" placeholder="Enter description..." required>
+            <label for="amount" id="warning"> add minus (-) sign for expense input</label>
+            <input type="number" id="amount" placeholder="Enter amount..." required>
+            <button type="submit">Add Transaction</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
